@@ -73,16 +73,15 @@ function Copy(obj) {
     } else {
         return obj;
     }
-}
+};
 
 const company2 = Copy(company);
 
-
 console.log(company);
 console.log(company2);
+console.log(company.sales === company2.sales);
 
-console.log(company.sales === company2.sales)
-
+console.log("");
 
 function sum(value) {
     let r = value;
@@ -91,7 +90,8 @@ function sum(value) {
         return r += arg;
     };
     return sum();
-}
+};
+
 console.log(sum(3));
 console.log(sum(5));
 console.log(sum(20));
